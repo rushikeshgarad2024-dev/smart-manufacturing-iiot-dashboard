@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><title>Smart Manufacturing & IIoT Telemetry Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <div class="header-content">
+        <h1>🏭 Smart Manufacturing IIoT & Telemetry Dashboard</h1>
+        <p>Real-Time CNC Machine Vibration Analysis, OEE Metrics & Predictive Maintenance Alerts</p>
+      </div>
+      <div class="author-badge">Industry 4.0 & Manufacturing • Rushikesh Garad</div>
+    </header>
+
+    <div class="metrics-grid">
+      <div class="card metric-card">
+        <span class="card-label">Overall Equipment Effectiveness (OEE)</span>
+        <h2 class="card-value text-emerald" id="oeeVal">88.4%</h2>
+        <span class="card-sub">Target: > 85.0% (World-Class)</span>
+      </div>
+      <div class="card metric-card">
+        <span class="card-label">Spindle Vibration RMS</span>
+        <h2 class="card-value text-sky" id="vibVal">1.24 mm/s</h2>
+        <span class="card-sub">ISO 10816 Standard: Zone A (Good)</span>
+      </div>
+      <div class="card metric-card">
+        <span class="card-label">Motor Core Temperature</span>
+        <h2 class="card-value text-amber" id="tempVal">58.2 °C</h2>
+        <span class="card-sub">Thermal Limit: 85.0 °C</span>
+      </div>
+      <div class="card metric-card">
+        <span class="card-label">CNC Feed Rate Status</span>
+        <h2 class="card-value text-emerald" id="feedVal">1,200 mm/min</h2>
+        <span class="card-sub">Operational: Unit #04 Running</span>
+      </div>
+    </div>
+
+    <div class="dashboard-main">
+      <div class="card telemetry-chart-card">
+        <h3>📈 Real-time Vibration & Harmonic Telemetry (100 Hz Stream)</h3>
+        <canvas id="telemetryCanvas" width="800" height="320"></canvas>
+      </div>
+      <div class="card log-card">
+        <h3>🚨 Predictive Maintenance Log</h3>
+        <div class="log-stream" id="logStream">
+          <div class="log-item">[00:01] System Initialized: CNC Spindle #04 Telemetry Online</div>
+          <div class="log-item">[00:05] Bearing health index: 98.4% (Nominal)</div>
+          <div class="log-item log-ok">[00:12] Auto-lubrication cycle completed successfully</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="dashboard.js"></script>
+</body>
+</html>

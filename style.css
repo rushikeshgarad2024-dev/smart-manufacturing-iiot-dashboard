@@ -1,0 +1,21 @@
+﻿* { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', system-ui, sans-serif; }
+body { background: #0b0f19; color: #f3f4f6; min-height: 100vh; padding: 24px; }
+.app-container { max-width: 1400px; margin: 0 auto; }
+header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #1f2937; padding-bottom: 16px; margin-bottom: 24px; }
+header h1 { font-size: 24px; color: #10b981; font-weight: 700; }
+header p { color: #9ca3af; font-size: 14px; margin-top: 4px; }
+.author-badge { background: rgba(16, 185, 129, 0.15); border: 1px solid rgba(16, 185, 129, 0.3); color: #6ee7b7; padding: 6px 14px; border-radius: 20px; font-size: 12px; font-weight: 600; }
+.metrics-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 24px; }
+.card { background: #111827; border: 1px solid #1f2937; border-radius: 12px; padding: 20px; }
+.card-label { font-size: 12px; color: #9ca3af; text-transform: uppercase; letter-spacing: 0.5px; }
+.card-value { font-size: 32px; font-weight: 800; margin: 8px 0 4px; }
+.card-sub { font-size: 12px; color: #6b7280; }
+.text-emerald { color: #34d399; }
+.text-sky { color: #38bdf8; }
+.text-amber { color: #fbbf24; }
+.dashboard-main { display: grid; grid-template-columns: 2fr 1fr; gap: 24px; }
+.telemetry-chart-card h3, .log-card h3 { font-size: 15px; color: #e5e7eb; margin-bottom: 16px; }
+#telemetryCanvas { background: #030712; border-radius: 8px; border: 1px solid #1f2937; width: 100%; height: auto; }
+.log-stream { background: #030712; border: 1px solid #1f2937; border-radius: 8px; padding: 12px; height: 320px; overflow-y: auto; font-family: monospace; font-size: 12px; }
+.log-item { padding: 6px 0; border-bottom: 1px solid #111827; color: #9ca3af; }
+.log-ok { color: #34d399; }
